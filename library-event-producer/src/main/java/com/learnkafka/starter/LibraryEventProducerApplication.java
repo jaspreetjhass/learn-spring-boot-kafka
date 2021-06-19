@@ -2,8 +2,10 @@ package com.learnkafka.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication(scanBasePackages = {"com.learnkafka"})
+@EnableDiscoveryClient
+@SpringBootApplication(scanBasePackages = { "com.learnkafka" })
 public class LibraryEventProducerApplication {
 
 	public static void main(String[] args) {
